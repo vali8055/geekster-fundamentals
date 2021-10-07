@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    text-align: center;
+}
+body{
+    background: linear-gradient(45deg,limegreen,coral);
+}
+#header{
+    background-color: black;
+     height: 70px;
+}
+h1{
+    color: cornsilk;
+}
+
+#brand{
+    width: 40%;
+    float: left;
+    line-height: 70px;
+    height: 70px;
+    text-align: center;
+}
+#links{
+width: 60%;
+float: right;
+line-height: 70px;
+height: 70px;
+text-align: center;
+}
+a{
+    text-decoration: none;
+    margin: 20px;
+    color: cornsilk;
+}
+#food{
+    background: linear-gradient(45deg,darkred,black);
+  color: white;
+  width: 500px;
+  padding: 15px;
+  border-radius: 50%;
+  margin:20px auto;
+
+}
+#main{
+    
+    margin-top: 40px;  
+}
+img{
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+}
+table {
+    width: 100%;
+    margin-top: 30px;
+}
+#burher{
+    background: linear-gradient(45deg,darkred,black);
+    color: white;
+    width: 500px;
+    padding: 15px;
+    border-radius: 50%;
+    margin:20px auto;
+}
+#drinks{
+    background: linear-gradient(45deg,darkred,black);
+    color: white;
+    width: 500px;
+    padding: 15px;
+    border-radius: 50%;
+    margin:20px auto;  
+}
+#footer{
+    
+    background-color: black;
+    padding: 50px;
+    margin-top: 30px;
+    
+}
