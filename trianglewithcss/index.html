@@ -4,38 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS</title>
+    <title>CSS triangle</title>
     <style>
       * {
+        margin: 0px;
         width: 0px;
       }
-      #box {
-        margin-top: 30px;
-        border: 90px solid green;
-        position: absolute;left: 275px;
-      }
-      #triangle1 {
-        border: 60px solid transparent;
-        border-bottom: 60px solid violet;
+      div {
+        margin: 0;
         position: absolute;
-        left: 300px;
-        z-index: 3;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #box {
+        border: 60px solid green;
+      }
+       #triangle1 {
+        border: 60px solid transparent;
+        border-bottom: 60px solid violet;    
+        margin-top: -20px;    
+        z-index: 1;
       }
       #triangle2 {
         border: 60px solid transparent;
         border-bottom: 60px solid rgb(224, 77, 9);
-        position: absolute;
-        top: 40px;
-        left: 300px;
-        z-index: 2;
+        margin-top: -60px;
+        
+        z-index: 3;
       }
       #triangle3 {
         border: 60px solid transparent;
-        border-bottom: 60px solid rgb(3, 6, 197);
-        position: absolute;
-        top: 70px;
-        left: 300px;
-        z-index: 1s;
+        border-bottom: 60px solid rgb(3, 6, 197); 
+        margin-top: -40px;      
+        z-index: 2;
       }
     </style>
   </head>
