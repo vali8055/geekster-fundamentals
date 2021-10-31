@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+                        
+        }
+        .circle{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-color: gray;
+            position: absolute;
+
+        }
+        .oval{
+            width: 120px;
+            height: 125px;
+            border-radius: 30%;
+            background-color:rgb(230, 224, 203);
+            position: absolute;
+
+        }
+        .rect{
+            width: 170px;
+            height: 80px;
+            border-radius: 25%;
+            background-color:rgb(192, 236, 126);
+            position: absolute;
+            bottom: 180px;
+        }
+        .minicircle{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%; 
+            background-color:rgb(230, 224, 203);
+            position: absolute;
+            bottom: 200px;
+
+        }
+        .semicircle1{
+            height: 40px;
+            width: 80px;
+            border-radius: 80px 80px 0 0;
+            position: absolute;
+            background-color: black;
+            transform: rotate(325deg);
+            left: 600px;
+            top: 270px;
+        }
+        .semicircle2{
+            height: 40px;
+            width: 80px;
+            border-radius: 80px 80px 0 0;
+            position: absolute;
+            background-color: black;
+            transform: rotate(35deg);
+            top: 270px;
+            right: 600px;
+        }
+        .triangle {
+            position: absolute;
+        border: 5px solid transparent;
+        border-bottom: 40px solid black;
+        top: 240px;
+    }
+    .ears{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgb(230, 224, 203);
+        left: 600px;
+        
+    }
+    .small{
+        position: relative;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: black;
+        left:  5px;
+        top:5px;
+    }
+    .ear2{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgb(230, 224, 203);
+        right: 600px;
+        
+    }
+    .small2{
+        position: relative;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: black;
+        left:10px;
+        top: 5px;
+    }
+    .ulip{
+        height: 8px;
+        width: 35px;
+        background-color: black;
+        opacity: 0.9;
+        position: absolute;
+        border-radius: 70%;
+        top: 360px;
+        box-shadow: 0 0 10px black;
+    }
+    .blip{
+        height: 17px;
+        width: 35px;
+        background-color: rgb(204, 197, 197);
+        border-radius:0 0 35px 35px;
+        position: absolute;
+        top: 372px;
+    }
+    .eyebrow1{
+        width:20px;
+        height: 25px;
+        background-color:transparent;
+        box-shadow: -4px 0px 0 0px black;
+        border-radius: 70%;
+        position: absolute;
+        transform: rotate(90deg);
+        top: 315px;
+        right: 685px;
+    }
+    .eyebrow2{
+        width:20px;
+        height: 25px;
+        background-color:transparent;
+        box-shadow: -4px 0px 0 0px black;
+        border-radius: 70%;
+        position: absolute;
+        transform: rotate(90deg);
+        top: 315px;
+        left: 685px;
+    }
+    .eye1{
+        width: 15px;
+        height: 25px;
+        background-color: black;
+        position: absolute;
+        border-radius: 70%;
+       
+        top: 320px;
+        right: 687px;
+    }
+    .whit1{
+        width: 5px;
+        height: 15px;
+        background-color: white;
+        position: absolute;
+        border-radius: 70%;
+        top: 324px;
+        right: 690px;
+    }
+    .eye2{
+        width: 15px;
+        height: 25px;
+        background-color: black;
+        position: absolute;
+        border-radius: 70%;
+       
+        top: 320px;
+        left: 687px;
+    }
+    .whit2{
+        width: 5px;
+        height: 15px;
+        background-color: white;
+        position: absolute;
+        border-radius: 70%;
+        top: 324px;
+        left: 690px;
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="circle">
+
+    </div>
+    <div class="oval"></div>
+    <div class="rect"></div>
+    <div class="minicircle"></div>
+    <div class="semicircle1"></div>
+    <div class="semicircle2"></div>
+    <div class="triangle"></div>
+    <div class="ears">
+        <div class="small"></div>
+    </div>
+    <div class="ear2">
+        <div class="small2"></div>
+    </div>
+    <div class="ulip"></div>
+    <div class="blip"></div>
+    <div class="eyebrow1"></div>
+    <div class="eyebrow2"></div>
+    <div class="eye1"></div>
+    <div class="whit1"></div>
+    <div class="eye2"></div>
+    <div class="whit2"></div>
+
+</body>
+</html>
