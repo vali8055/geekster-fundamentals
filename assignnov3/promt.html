@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt</title>
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        background-color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label>enter value is:</label>
+      <input type="text" id="txt" />
+    </form>
+    <script>
+      let a = prompt("enter the input");
+      let copy = document.getElementById("txt");
+      copy.value = a;
+    </script>
+  </body>
+</html>
