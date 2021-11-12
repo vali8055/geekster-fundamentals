@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <script>
+
+        function cylinder() {
+            var pi = 3.14
+            var h = document.getElementById('height').value
+            var r = document.getElementById('radius').value
+            var surface = 2 * pi * r * (h + r)
+            var sur = document.getElementById('surface')
+            sur.innerText = ("surface area=  ") + surface+("m^2")
+            var volume = pi * r * r * h
+            var vol = document.getElementById('volume')
+            vol.innerText = ("volume=  ") + volume+("m^3")
+        }
+        function power() {
+            var v = document.getElementById('voltage').value
+            var i = document.getElementById('current').value
+            var power = v * i
+            var pow = document.getElementById('power')
+            pow.innerText = ("power= ") + power+("watts")
+        }
+        function wall() {
+            let w = document.getElementById('width').value
+            let y = document.getElementById('heiht').value
+            let x = document.getElementById('n').value
+            console.log(w)
+            console.log(y)
+            console.log(x)
+            let z = x/(w*y)
+            let wal = document.getElementById('walls')
+            wal.innerText = ("total number of walls that can be painted= ") + z + ("walls")
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>Question 1</h1>
+        <p>Find the volume and surface area of the cylinder</p>
+        <label>Height</label>
+        <input type="number" id="height" value="">
+        <label>Radius</label>
+        <input type="number" id="radius" value="">
+        <button onclick="cylinder()">Calculate</button><br />
+        <p id="volume"></p><br />
+        <p id="surface"></p>
+    </div>
+    <div>
+        <h1>Question 2</h1>
+        <p>Find the power for given current and voltage</p>
+        <label>Voltage</label>
+        <input type="number" id="voltage" value="">
+        <label>Current</label>
+        <input type="number" id="current" value="">
+        <button onclick="power()">Calculate</button><br />
+        <p id="power"></p>
+    </div>
+    <div>
+        <h1>Question 3</h1>
+        <p>Find the Number of complete walls that i can paint</p>
+        <label>width</label>
+        <input type="number" id="width" value="">
+        <label>height</label>
+        <input type="number" id="heiht" value="">
+        <label>No of squaremeter to be painted</label>
+        <input type="number" id="n" value="">
+        <button onclick="wall()">Calculate</button><br />
+        <p id="walls"></p>
+    </div>
+
+</body>
+
+</html>
