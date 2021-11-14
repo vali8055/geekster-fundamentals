@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div{
+        width: 500px;
+        padding: 30px;
+        margin: 100px auto;
+        box-shadow: 0 0 10px black;
+    }
+    </style>
+    <script>
+        function fn() {
+            var inputref=document.getElementById('p')
+            var butref=document.querySelector('button')
+            if(butref.innerText=="showpassword"){
+            inputref.type="text"  
+            butref.innerText="hidepassword"
+            console.log("sunnieb yedhava")   
+            }      
+            else if(butref.innerText=="hidepassword")
+            {
+                inputref.type="password"
+                butref.innerText="showpassword"
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+    <h2>show/hidepassword</h2>
+    <label>enter text</label>
+    <input type="password" id="p"/>
+    <button onclick="fn()">showpassword</button>
+    
+    </div>
+</body>
+</html>

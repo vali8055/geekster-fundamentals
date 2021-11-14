@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Morning</title>
+    <style> div{
+        width: 500px;
+        padding: 30px;
+        margin: 100px auto;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+        height: 30vh;
+    }
+    #input{
+        color: blueviolet;
+    }
+    
+    </style>
+    
+    
+
+</head>
+<body>
+    <div>
+        <h1 id="input">Hello MVSK</h1><br/>
+    <button onclick="fn()">Morning</button>
+    <button onclick="fa()">afternoon</button>
+    <button onclick="fe()">Evening</button>
+    </div>
+    <script>
+        var greet = document.getElementById('input');
+       function fn() {
+           greet.innerText = "Good Morning MVSK"
+           greet.style.color = 'red'
+           var box = document.querySelector('div')
+           box.style.background = "green"
+       }
+       function fa() {
+           greet.innerText = "Good Afternoon MVSK"
+           greet.style.color = 'black'
+           var box = document.querySelector('div')
+           box.style.background = "red"
+       }
+       function fe() {
+           greet.innerText = "Good Evening MVSK"
+           greet.style.color = 'violet'
+           var box = document.querySelector('div')
+           box.style.background = "grey"
+       }
+     
+   </script>
+</body>
+</html>
