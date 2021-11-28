@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            margin: 100px auto;
+            text-align: center;
+            box-shadow: 0 0 10px black;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Enter To Do List: <input type="text" value="" id="i" placeholder="enter to do list"/>
+        <button onclick="create()">Add</button>
+        <br/>
+    </div>
+
+<script>
+        function   create(){
+                var inputref=document.getElementById('i').value 
+               var pref= document.createElement("span")
+               pref.append(inputref)
+               pref.setAttribute('id',"main")
+               pref.style.marginRight="10px"
+               pref.style.marginTop="10px"
+               var btn=document.createElement("button")
+               btn.innerText="Edit"
+               btn.style.marginRight="10px"
+               btn.style.marginTop="10px"
+               btn.setAttribute("onclick","edit()")
+               btn.setAttribute('id',"mai")
+               var btn1=document.createElement("button")
+               btn1.setAttribute("onclick","del()")
+               btn1.setAttribute('id',"ma")
+               btn1.innerText="Delete"
+               btn1.style.marginRight="10px"
+               btn1.style.marginTop="10px"
+               var br=document.createElement("br")
+               document.querySelector('div').appendChild(pref)
+               document.querySelector('div').appendChild(btn)
+               document.querySelector('div').appendChild(btn1)
+               document.querySelector('div').appendChild(br)
+               let x=document.getElementById('i')
+               x.value=""
+        }
+        function del(){
+        document.getElementById('main').remove()
+        document.getElementById('mai').remove()
+        document.getElementById('ma').remove()
+        }
+        function edit(){
+            let a=document.getElementById("main").innerText
+            document.getElementById("i").value=a
+            del()
+          
+            
+        }
+</script>
+
+</body>
+</html>
