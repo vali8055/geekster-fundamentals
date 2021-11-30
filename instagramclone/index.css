@@ -1,0 +1,122 @@
+html {
+    font-size: 10px;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  .container {
+    border: 2px solid black;
+    height: 100vh;
+    width: 25vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 9px;
+  }
+  .head {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+  }
+  h1 {
+    padding: 0px 90px;
+  }
+  /* name,profile*/
+  .account {
+    display: flex;
+    height: 50px;
+  }
+  .profile img {
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    float: left;
+  }
+  .account p {
+    margin-top: 10px;
+    float: right;
+    font-size: 18px;
+  }
+  .account span {
+    font-size: 14px;
+  }
+  .account .material-icons {
+    margin-left: auto;
+  
+    font-size: 30px;
+    padding-right: 5px;
+    padding-top: 6px;
+  }
+  /* post img*/
+  .post img {
+    width: 100%;
+    object-fit: cover;
+    height: 50vh;
+    margin-top: 5px;
+  }
+  /* like,share icons*/
+  .support {
+    display: flex;
+    margin-top: 5px;
+  }
+  .save {
+    margin-left: auto;
+    padding-right: 5px;
+  }
+  .support .like,
+  .comment,
+  .share,
+  .more,
+  .save {
+    padding: 4px;
+  }
+  .support .more {
+    margin-left: 65px;
+    margin-top: -10px;
+  }
+  /*comments and likes*/
+  .feedback {
+    padding: 5px 10px 10px 15px;
+  }
+  .feedback h3 {
+    font-size: 16px;
+  }
+  .feedback p {
+    font-size: 14px;
+  }
+  .feedback .time {
+    font-size: 10px;
+  }
+  /* adding comment box*/
+  .postComment {
+    display: flex;
+    width: 100%;
+  
+    height: 5vh;
+  }
+  .postComment .emoji,
+  input,
+  button {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .postComment button {
+    margin-left: auto;
+    padding-right: 4px;
+  }
+  .postComment input {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+  }
+  .postComment button {
+    outline: none;
+    border: none;
+  }
+  /* footer */
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+  }
