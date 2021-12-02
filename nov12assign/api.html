@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <p>title</p>
+    <p id="content1"></p>
+    <p>description</p>
+    <p id="content"></p>
+    <p>price</p>
+    <div id="content2"></div>
+    <script>
+        let contentDiv1 = document.getElementById("content1")
+        let contentDiv = document.getElementById("content")
+        let contentDiv2 = document.getElementById("content2")
+        let url = "https://fakestoreapi.com/products?limit=5"
+        const responsefromfetch = fetch(url).then(response => {
+            //signifies retrieving of data
+            return response.json()
+        }).then(data => {
+            //data manipulation
+            // console.log(data)
+            contentDiv1.innerHTML = data[0].title
+            contentDiv.innerHTML = data[0].description
+            contentDiv2.innerHTML = data[0].price
+        })
+    </script>
+</body>
+
+</html>
