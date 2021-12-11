@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+</head>
+
+<body>
+    <h2>Admission Form for Geekster</h2>
+    <div class="form-container">
+        <form autocomplete="off">
+            <!-- autocomple is used to on or off to autofill or suggestions -->
+            <!-- First name, Last name,Mail Id,Contact Number,Gender,dob,address,college name, year of graduation,resume
+        ,Percentage -->
+            <input id="inp"type="text" name="f_name" class="inline" placeholder="First Name" required />
+            <!-- place holder is for ui and name is an attribute used for reference/for backend we can skip the backslash
+        in self closing tag -->
+            <input id="inp"type="text" name="l_name" class="inline" placeholder="Last Name" />
+            <br />
+            <input id="inp" type="email" name="mail" class="inline" placeholder="Email ID" required />
+            <input id="inp"type="number" name="phone" class="inline" placeholder="Phone Number" required
+                pattern="[0-9]{4}-[0-9]{3}-[0-9{3}" />
+            <br />
+            <input id="inp" type="date" name="date_of_birth" class="inline" max="2022-01-01" />
+            <select id="inp"name="gender" class="inline">
+                <option selected disabled>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <textarea id="inp"name="address" placeholder="Address"></textarea>
+            <h4>Education info</h4>
+            <select id="inp" name="Degree">
+                <option selected disabled>Select Degree</option>
+                <optgroup label="Bacheolers">
+                    <option>B.tech</option>
+                    <option>B.E</option>
+                    <option>B.sc</option>
+                </optgroup>
+                <optgroup label="Masters">
+                    <option>M.tech</option>
+                    <option>M.E</option>
+                    <option>M.sc</option>
+                </optgroup>
+            </select>
+            <input id="inp" type="text" name="college" placeholder="College Name" />
+            <input id="inp"type="number" name="garduation_year" placeholder="Year of Graduation" />
+            <input id="inp"type="number" name="percentage" placeholder="Percentage" />
+            <input id="inp"type="file" />
+            <h4>Course Details</h4>
+            <input type="radio" class="inline" name="ex">Fundamentals
+            <input type="radio" class="inline" name="ex">Advanced
+            <br>
+            <input type="checkbox" class="inline">Web
+            <input type="checkbox" class="inline">DSA
+            <br>
+            <input type="submit" value="Apply for Admission" class="inline">
+            <input type="reset" class="inline">
+        </form>
+    </div>
+</body>
+
+</html>

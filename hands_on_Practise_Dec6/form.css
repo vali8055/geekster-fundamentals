@@ -1,0 +1,43 @@
+input,select,textarea,h2{
+    display: block;
+    margin:8px;
+    
+    /* top right bottom left
+    if 3 values top horitontal bottom
+    if 2 values vertical and left and right
+    if 1 value all are same */
+}
+#inp{
+   border-radius: 5px;
+   height: 30px;
+}
+
+.inline{
+    display: inline;
+}
+body{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf-PLitzrGgC_FyC122mcy2P0nUMRv2awo9w&usqp=CAU);
+  background-attachment: fixed;
+        background-position: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+.form-container{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    background: linear-gradient(45deg,skyblue,rgb(163, 163, 231));
+    width: 30%;
+       height: 90%;
+    margin: auto;margin-top: 25px;
+    
+}
+h2{
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+}
+h4{
+    margin: 0.5em 4px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
