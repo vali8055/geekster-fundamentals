@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Survey Form</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+            height: 30px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        h1 {
+            text-align: center;
+            background: linear-gradient(45deg, coral, rgb(219, 219, 228), yellow);
+            background-position: center;
+        }
+
+        body {
+            background-image: url(https://previews.123rf.com/images/romastudio/romastudio1603/romastudio160300219/54088690-organic-food-background-studio-photo-of-different-fruits-and-vegetables-on-white-wooden-table-high-r.jpg);
+            height: 90vh;
+
+            background-position: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100px;
+            height: 40px;
+            background-color: grey;
+            box-shadow: 0 0 10px black;
+
+        }
+        .but{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Customer Satisfaction Survey Form</h1>
+    <div id="container">
+        <h2>Please rate your satisfaction with</h2>
+        <div id="table">
+            <table>
+                <tr>
+                    <td></td>
+                    <td>Highly Satisfied</td>
+                    <td>Satisfied</td>
+                    <td>Neither Satisfied nor Dissatisfied</td>
+                    <td>Dissatisfied</td>
+                    <td>Highly Dissatisfied</td>
+                </tr>
+                <tr>
+                    <td>The Taste of Your Food</td>
+                    <td><input type="radio" name="taste"></td>
+                    <td><input type="radio" name="taste"></td>
+                    <td><input type="radio" name="taste"></td>
+                    <td><input type="radio" name="taste"></td>
+                    <td><input type="radio" name="taste"></td>
+                </tr>
+                <tr>
+                    <td>The temperature of your food</td>
+                    <td><input type="radio" name="temp"></td>
+                    <td><input type="radio" name="temp"></td>
+                    <td><input type="radio" name="temp"></td>
+                    <td><input type="radio" name="temp"></td>
+                    <td><input type="radio" name="temp"></td>
+                </tr>
+                <tr>
+                    <td>The speed of service</td>
+                    <td><input type="radio" name="speed"></td>
+                    <td><input type="radio" name="speed"></td>
+                    <td><input type="radio" name="speed"></td>
+                    <td><input type="radio" name="speed"></td>
+                    <td><input type="radio" name="speed"></td>
+                </tr>
+                <tr>
+                    <td>The friendliness of the crew</td>
+                    <td><input type="radio" name="crew"></td>
+                    <td><input type="radio" name="crew"></td>
+                    <td><input type="radio" name="crew"></td>
+                    <td><input type="radio" name="crew"></td>
+                    <td><input type="radio" name="crew"></td>
+                </tr>
+                <tr>
+                    <td>The accuracy of your order</td>
+                    <td><input type="radio" name="order"></td>
+                    <td><input type="radio" name="order"></td>
+                    <td><input type="radio" name="order"></td>
+                    <td><input type="radio" name="order"></td>
+                    <td><input type="radio" name="order"></td>
+                </tr>
+                <tr>
+                    <td>The cleanliness of the restaurant</td>
+                    <td><input type="radio" name="clean"></td>
+                    <td><input type="radio" name="clean"></td>
+                    <td><input type="radio" name="clean"></td>
+                    <td><input type="radio" name="clean"></td>
+                    <td><input type="radio" name="clean"></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <div class="but">
+        <button>Submit</button>
+    </div>
+</body>
+
+</html>
