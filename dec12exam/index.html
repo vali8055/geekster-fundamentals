@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Url</title>
+</head>
+
+<body>
+  <div id="meme">
+    <h2 id="title"></h2>
+    <img id="imgs" />
+  </div>
+  <script>
+    
+    async function fn() {
+      var res = await fetch('https://meme-api.herokuapp.com/gimme');
+      var data = await res.json();
+      document.getElementById('title').innerText = data.title
+      let x=document.getElementById('imgs')
+      x.src=data.url;
+      x.style.width="80%"
+      x.style.height="80vh"
+
+    }
+    fn()
+
+  </script>
+</body>
+
+</html>
