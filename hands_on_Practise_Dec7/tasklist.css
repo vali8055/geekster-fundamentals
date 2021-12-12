@@ -1,0 +1,23 @@
+ul button {
+  margin-left: 15px;
+}
+
+@media (max-width: 700px) {
+  /* body {
+        background-color: #FF0000;
+    } */
+  #add_task_button {
+    display: none;
+  }
+}
+.container {
+  border: 1px solid black;
+  width: 40%;
+  height: 20vh;
+  margin: auto;
+  padding: 30px;
+  margin-top: 240px;
+}
+body {
+  background-image: url("https://previews.123rf.com/images/mangpor2004/mangpor20041605/mangpor2004160500099/56383918-to-do-list-background-template.jpg");
+}
