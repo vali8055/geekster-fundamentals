@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Move Object with Arrow Keys using JavaScript Function.</title>
+    <style>
+        #container{
+            width: 100%;
+            height: 79vh;
+            border: 1px solid black;
+        }
+        #circle {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: cadetblue;
+            box-shadow: 0 0 10px black;
+        }
+
+    </style>
+</head>
+
+<body onkeydown="getKeyAndMove(event)">
+    <h1>JavaScript - Move Object with Arrow Keys using JavaScript Function.</h1>
+    <h2>Use Arrow keys to move object left, top, right and down.</h2>
+    <div id="container">
+    <div id="circle"></div>
+    </div>
+    <script >
+        var objImage = null;
+        function init() {
+            objImage = document.getElementById("circle");
+            objImage.style.position="relative"
+            objImage.style.left = "0px";
+            objImage.style.top = "0px";
+        }
+        document.addEventListener('keydown', function (e) {
+            switch (e.keyCode) {
+                case 37:
+                    moveLeft();
+                    break;
+                case 38:
+                    moveUp();
+                    break;
+                case 39:
+                    moveRight();
+                    break;
+                case 40:
+                    moveDown();
+                    break;
+            }
+        });
+        function moveLeft() {
+            objImage.style.left = parseInt(objImage.style.left) - 5 + "px";
+        }
+        function moveUp() {
+            objImage.style.top = parseInt(objImage.style.top) - 5 + "px";
+        }
+        function moveRight() {
+            objImage.style.left = parseInt(objImage.style.left) + 5 + "px";
+        }
+        function moveDown() {
+            objImage.style.top = parseInt(objImage.style.top) + 5 + "px";
+        }
+        window.onload = init;
+    </script>
+</body>
+</head>
+
+<body>
+
+</body>
+
+</html>
